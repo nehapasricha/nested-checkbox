@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <ul>
+      <li>
+        <label>
+          <input type="checkbox" class="parent-checkbox" id="parent-1" /> Parent
+          Checkbox 1
+        </label>
+        <ul>
+          <li>
+            <label>
+              <input
+                type="checkbox"
+                class="child-checkbox"
+                data-parent="parent-1"
+              />
+              Child Checkbox 1
+            </label>
+          </li>
+          <li>
+            <label>
+              <input
+                type="checkbox"
+                class="child-checkbox"
+                data-parent="parent-1"
+              />
+              Child Checkbox 2
+            </label>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" class="parent-checkbox" id="parent-2" /> Parent
+          Checkbox 2
+        </label>
+        <ul>
+          <li>
+            <label>
+              <input
+                type="checkbox"
+                class="child-checkbox"
+                data-parent="parent-2"
+              />
+              Child Checkbox 3
+            </label>
+          </li>
+          <li>
+            <label>
+              <input
+                type="checkbox"
+                class="child-checkbox"
+                data-parent="parent-2"
+              />
+              Child Checkbox 4
+            </label>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
